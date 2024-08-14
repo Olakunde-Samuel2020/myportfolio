@@ -6,7 +6,239 @@ body
     font-family: kotta one;
     padding: 0;
     margin: 0;
+    background-color:white;
 }
-header{
+        /* nav bar */
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-link, .right-link
+{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    border: 1px solid black;
+    border-radius:10px ;
+}
+.f-l-l-1 a, .f-l-l-2 a, .f-r-l-1 a, .f-r-l-2 a
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0 10px; 
+  
+}
+ .f-l-l-2 a img,  .f-r-l-2 a img
+{
+    margin: 0 20px;
+}
+.navicon 
+{
+    width:40px;
+}
+.navicon1{
+    width: 35px;
+}
+.logo 
+{
+    width:50px;
+}
+
+    /* introcard */
+.intro-card
+{   
+    margin: 30px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+div .important
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+div .wid
+{
+    display: flex;
+    align-items: center;
+}
+div .wid p
+{
+    font-size: 20px;
+}
+div.act
+{
+    display: flex;
+    align-items: center;
+    background-color: #88361e;
+}
+.brief-intro
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.me p 
+{
+    width: 700px;
+    font-size: 55px;
+}
+.buttons div a
+{
+    display: flex;
+    align-items:  center;
+}
+.buttons div a img
+{
+    margin-right: 10px;
+    width: 30px;
+}
+.buttons
+{
+    display: flex;
+   
+}
+.buttons div a p
+{
+    font-size: 20px;
+}
+        /* services */
+#services
+{
+    padding: 60px;
+}
+#services .s-txt h3
+{
+    font-size: 40px;
+}
+#services div h3 span 
+{
+    color: orangered;
+}
+#services .s-txt p
+{
+    width: 650px;
+    text-align: left;
+}
+#services .s-cards
+{
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
+    padding: 0 250px;
+}
+#services .s-cards .s-c-txt1,
+#services .s-cards .s-c-txt2
+{
+    background-color: black;
+    color: white;
+    padding: 30px 90px;
+    text-align: center;
     
+}
+#services .s-cards .s-c-txt1
+{
+    margin-right: 30px;
+    border-top-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+}
+#services .s-cards .s-c-txt2
+{
+    margin-left: 30px;
+    border-top-right-radius:30px ;
+    border-bottom-left-radius:30px ;
+}
+#services .s-cards .s-c-txt1 img, #services .s-cards .s-c-txt2 img
+{
+    width:104px;
+}
+#services .s-cards .s-c-txt1 .s-c-link1 a, #services .s-cards .s-c-txt2 .s-c-link2 a
+{
+    display: flex;
+    align-items: center;
+}
+#services .s-cards .s-c-txt1 .s-c-link1 a img, #services .s-cards .s-c-txt2 .s-c-link2 a img
+{
+    width: 65px;
+}
+
+        /* services */
+#projects
+{
+    padding: 60px;
+}
+#projects .p-txt h3
+{
+    font-size: 40px;
+}
+#projects div h3 span 
+{
+    color: orangered;
+}
+#projects .p-txt p
+{
+    width: 650px;
+}
+.p-collage{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.p-cards
+{
+    width: 900px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding:30px 40px;
+    overflow-x: scroll;
+}
+.p-cards div
+{  
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    margin: 0 20px;
+}
+.p-cards .p-001
+{
+    padding: 40px 20px;
+}
+.p-cards .p-003
+{
+    padding-top:30px ;
+    padding-bottom: 30px;
+}
+.p-cards .p-003 img
+{
+    width:60px;
+}
+.p-cards div img
+{
+    width: 100px;
+    margin-bottom: 0;
+}
+.p-cards div p
+{
+    margin-top: 0;
+    width: 150px;
+    
+}
+.p-cards div p span
+{
+    color: orangered;
+}
+.dir-link a
+{
+    display: flex;
+    align-items: center;
+}
+.dir-link a img
+{
+    width: 20px;
 }
