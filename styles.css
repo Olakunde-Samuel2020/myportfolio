@@ -14,6 +14,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1em;
 }
 .left-link, .right-link
 {
@@ -28,12 +29,26 @@ nav
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    padding: 0 10px; 
-  
+    padding: 0 2em; 
+    text-decoration: none;
+    color: black;
+    margin: 0;
 }
- .f-l-l-2 a img,  .f-r-l-2 a img
+.f-l-l-1 a, .f-l-l-2 a
 {
-    margin: 0 20px;
+    padding: .3em 2em;
+}
+.f-l-l-1 a p, .f-l-l-2 a p, .f-r-l-1 a p, .f-r-l-2 a p 
+{
+    margin: 0 .5em;
+}
+.f-l-l-1 a img, .f-r-l-1 a img
+{
+    margin-bottom: 0.5em; 
+}
+.f-r-l-2 a img
+{
+    margin-bottom: 0.3em;
 }
 .navicon 
 {
@@ -50,10 +65,10 @@ nav
     /* introcard */
 .intro-card
 {   
-    margin: 30px;
+    margin: 1em;
     background-color: black;
     color: white;
-    padding: 30px;
+    padding: 2em;
     border-radius: 30px;
 }
 div .important
@@ -71,50 +86,97 @@ div .wid p
 {
     font-size: 20px;
 }
+.i001
+{
+    padding:0 0 2em 0;
+}
 div.act
 {
     display: flex;
     align-items: center;
     background-color: #88361e;
+    /* margin-right: 9em; */
+    border-radius: 1em;
+    width: 200px;
+    margin-right: 4em;
+    padding: .2em 1.5em .2em 1em;   
 }
-.brief-intro
+div.act img, div.act p
+{
+    margin: 0;
+}
+.i002
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.i002 img
+{
+    width: 350px;
+}
 .me p 
 {
-    width: 700px;
-    font-size: 55px;
+    width: 500px;
+    font-size: 50px;
 }
-.buttons div a
+.l003 .buttons div a
 {
     display: flex;
     align-items:  center;
 }
-.buttons div a img
-{
-    margin-right: 10px;
-    width: 30px;
-}
 .buttons
 {
     display: flex;
-   
+    align-items: center;
+    margin-bottom: 5em;
+}
+.buttons div
+{
+    margin: 0 .7em;
+    border: 1px solid white;
+    border-radius: 1em;
+    width: 200px;
+
+}
+.buttons div a
+{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    
+}
+.buttons .button1 a
+{
+    padding-left: 2.7em;
+}
+.buttons .button2 a
+{
+    padding-left: 1.7em;
+}
+.buttons div a img
+{
+    margin-right: .2em;
+    width: 30px;
 }
 .buttons div a p
 {
     font-size: 20px;
 }
+
         /* services */
 #services
 {
-    padding: 60px;
+    padding: 4em 3em;
+}
+#services .s-txt
+{
+    padding-bottom: .5em;
 }
 #services .s-txt h3
 {
     font-size: 40px;
+    margin: 0;
 }
 #services div h3 span 
 {
@@ -124,6 +186,7 @@ div.act
 {
     width: 650px;
     text-align: left;
+    padding-bottom: 3em;
 }
 #services .s-cards
 {
@@ -161,13 +224,16 @@ div.act
 {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: orangered;
+    margin-left: 2em;
 }
 #services .s-cards .s-c-txt1 .s-c-link1 a img, #services .s-cards .s-c-txt2 .s-c-link2 a img
 {
-    width: 65px;
+    width: 50px;
 }
 
-        /* services */
+        /*project */
 #projects
 {
     padding: 60px;
@@ -175,6 +241,7 @@ div.act
 #projects .p-txt h3
 {
     font-size: 40px;
+    margin: 0;
 }
 #projects div h3 span 
 {
@@ -187,23 +254,109 @@ div.act
 .p-collage{
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 4em;
 }
 .p-cards
 {
-    width: 900px;
+    width: 780px;
     color: white;
     display: flex;
+    
     align-items: center;
     padding:30px 40px;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    
 }
-.p-cards div
-{  
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    margin: 0 20px;
+
+/* Card container */
+/* Card container */
+.p-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual card */
+.p-cards > div {
+    width: 250px;
+    background-color:black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p-cards > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.p-cards > div .img-container {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-cards > div .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.p-cards > div:hover .img-container img {
+    transform: scale(1.05);
+}
+
+/* Text content */
+.p-cards > div .text-content {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.p-cards > div .text-content .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.p-cards > div .text-content .text {
+    flex-grow: 1;
+}
+
+.p-cards > div .text-content .text p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.p-cards > div .text-content .text span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Hover effect for image */
+.p-cards > div .img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.p-cards > div:hover .img-container::after {
+    opacity: 1;
 }
 .p-cards .p-001
 {
@@ -233,6 +386,17 @@ div.act
 {
     color: orangered;
 }
+.p-cards div div:hover
+{
+    display: block;
+}
+.p-cards div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+    height: 250px; /* Increase height on hover */
+}
+
 .dir-link a
 {
     display: flex;
@@ -241,4 +405,63 @@ div.act
 .dir-link a img
 {
     width: 20px;
+}
+
+        /* contact */
+#contact
+{
+    margin-top: 0;
+
+    background-color: black;
+    text-align: center;
+    padding:50px 0 100px 0;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 500px;
+}
+#contact p
+{
+    font-size: 30px;
+    color: white;
+}
+#contact p span 
+{
+    color: orangered;
+}
+#contact .modal-button-container
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .modal-button 
+{
+    padding:10px 20px;
+    background-color: white;
+    width: 20%;
+    border: 1px solid;
+    margin-bottom: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 50px;
+}
+#contact .modal-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#contact .modal-button a img
+{
+    margin-right: 10px;
+    width: 30px;
+}
+#contact .modal-button a p
+{
+    color: black;
+    font-size: 20px;    
 }
